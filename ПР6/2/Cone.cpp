@@ -63,6 +63,7 @@ double Cone::volume()
 std::ostream& operator<<(std::ostream& stream, Cone obj)
 {
 	stream << "(" << obj.x << "; " << obj.y << "; " << obj.z << ") ";
-	stream << "r=" << obj.r << "; h=" << obj.h << "; area=" << obj.area() << "; vol=" << obj.volume();
+	stream << "r=" << obj.r << "; h=" << obj.h << "; ";
+	stream << "area=" << obj.area() << "; vol=" << obj.volume();
 	return stream;
 }
